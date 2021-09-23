@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/**************
+header
+***************/
+
+
+header{
+   display: flex;
+    height: 100vw; 
+    justify-content: flex-start; 
+}
+/**********
+aside
+***********/
+aside{
+    
+    background-color: violet;
+    height: 100%;
+    width: 20%
+}
+/******************
+Main
+*******************/
+main{
+    height: 100%;
+    width: 80%;
+    background-color: rgb(85, 16, 85);
+}
+.head_main{
+   height: 70px;
+   width: 100%;
+   background-color: tomato;
+}
+
+
+/*****************
+Footer
+******************/
+footer{
+    
+    height: 71px;
+    width: 100%;
+    background-color: rgb(89, 159, 221);
+}
