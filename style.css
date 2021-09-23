@@ -8,6 +8,9 @@
     display: table;
     clear: both;
 }
+.flex-contain{
+    display: flex;
+}
 /**************
 header
 ***************/
@@ -27,14 +30,15 @@ main{
 aside
 ***********/
 aside{
-    display: flex;
+   
     flex-direction: column;
+    
+    background-color: rgb(0, 0, 0);
+    width: 15%;
     justify-content: space-between;
-    background-color: violet;
-    width: 20%;
     padding-left: 2rem;
     padding-right: 2rem;
-
+    color: white;
     
 }
 .logo{
@@ -42,24 +46,51 @@ aside{
 }
 
 .logo> img{
-    padding-top: 2remrem;
+    padding-top: 2rem;
     width: 75%;
     
 }
 div>a{
+    color: rgba(94, 94, 94, 94);
     display: block;
     padding-bottom: 0.5rem;
     text-decoration: none;
-    
+    display: flex;
+    align-items: center;
 }
 a> img{
-    width: 10%;
+    width: 15%;
+}
+a>i {
+    color: white;
 }
 a> p{
-   display: inline-block;
+    padding-left: 10px;
+    font-size: 13px;
 }
+.playlist{
+    overflow: auto;
+    height: 15%;
+}
+.playlist> a{
+
+    
+    font-size: 13px;
+}
+
+
 .cont_head_aside> h3{
-    padding: 3rem 0 1rem 0;
+    padding: 2rem 0 1rem 0;
+}
+.img_install{
+    width: 10%;
+}
+.img_profile{
+    width: 15%;
+}
+.john{
+    font-weight: 700;
+    color: white;
 }
 
 /******************
@@ -67,22 +98,104 @@ Main
 *******************/
 section{
     height: 100%;
-    width: 80%;
-    background-color: rgb(85, 16, 85);
+    width: 85%;
+    overflow: auto;
+    background-color: rgba(20, 25, 34, 1)
 }
 .head_main{
-   height: 70px;
-   width: 100%;
-   background-color: tomato;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 1;
+    align-items: center;
+    height: 105px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.561);
 }
+.head_main> div{
+    flex-shrink: 1;
+    margin-right: 2%;
+    border: 2px solid white;
+    padding: 1rem 3rem;
+    border-radius: 38px;
+}
+.contain_generale{
+    flex-shrink: 1;
+    display: inline-flex;
+    flex-direction: column;
+}
+.section_nav{
+    display: flex;
+    padding-top: 2%;
+    justify-content: center;
+}
+.section_nav> h4{
+    
+    flex-wrap: wrap;
+    color:rgba(94, 94, 94, 94);
+    padding-left: 1rem;
+}
+/********image
+**************/
+
+
+.gruppi_playlist> h2{
+    color: white;
+    
+}
+.gruppi_playlist> p{
+    padding-top: 0.5rem;
+    color:rgba(94, 94, 94, 94);
+}
+
+.img_contain{
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    padding: 2rem 0;
+}
+.image{
+    
+   width: 220px; 
+   text-align: center;
+}
+.image> img{
+    width: 100%;
+    padding: 0.5rem;
+}
+.image> p{
+    color:rgba(94, 94, 94, 94);
+}
+.image> h4{
+    color: white;
+    padding-bottom: 0.5rem;
+}
+
 
 
 /*****************
 Footer
 ******************/
 footer{
+    display: flex;
+    justify-content: space-between;
     
-    height: 71px;
     width: 100%;
-    background-color: rgb(89, 159, 221);
+    background-color: rgba(40, 40, 40, 1);
+}
+.sinister_contain{
+
+}
+.img_sinister{
+    padding: 1rem 0;
+    width: 15%;
+    flex-wrap: wrap;
+    
+}
+.img_sinister> img{
+    
+    width: 100%;
+}
+.titolo_sinister{
+    align-items: center;
 }
