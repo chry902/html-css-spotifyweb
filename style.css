@@ -11,26 +11,61 @@
 /**************
 header
 ***************/
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+}
 
-
-header{
+main{
    display: flex;
-    height: 100vw; 
+    height: 100%;
+    width: 100%;
     justify-content: flex-start; 
 }
 /**********
 aside
 ***********/
 aside{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: violet;
-    height: 100%;
-    width: 20%
+    width: 20%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    
 }
+.logo{
+    padding-bottom: 2rem;
+}
+
+.logo> img{
+    padding-top: 2remrem;
+    width: 75%;
+    
+}
+div>a{
+    display: block;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    
+}
+a> img{
+    width: 10%;
+}
+a> p{
+   display: inline-block;
+}
+.cont_head_aside> h3{
+    padding: 3rem 0 1rem 0;
+}
+
 /******************
 Main
 *******************/
-main{
+section{
     height: 100%;
     width: 80%;
     background-color: rgb(85, 16, 85);
