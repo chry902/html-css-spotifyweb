@@ -18,24 +18,24 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: sans-serif;
+    
 }
 
 main{
    display: flex;
     height: 100%;
-    width: 100%;
+    width: 100%
     justify-content: flex-start; 
 }
 /**********
 aside
 ***********/
 aside{
-   
-    flex-direction: column;
-    
-    background-color: rgb(0, 0, 0);
-    width: 15%;
     justify-content: space-between;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
     color: white;
@@ -78,7 +78,9 @@ a> p{
     font-size: 13px;
 }
 
-
+.installa{
+    
+}
 .cont_head_aside> h3{
     padding: 2rem 0 1rem 0;
 }
@@ -97,32 +99,34 @@ a> p{
 Main
 *******************/
 section{
-    height: 100%;
-    width: 85%;
-    overflow: auto;
+    
+    width: 100%;
+    
     background-color: rgba(20, 25, 34, 1)
 }
 .head_main{
     color: white;
     display: flex;
     justify-content: flex-end;
-    flex-shrink: 1;
+    
     align-items: center;
     height: 105px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.561);
 }
 .head_main> div{
-    flex-shrink: 1;
+    
     margin-right: 2%;
     border: 2px solid white;
     padding: 1rem 3rem;
     border-radius: 38px;
 }
 .contain_generale{
-    flex-shrink: 1;
+    width: 100%;
+    height: 100%;
     display: inline-flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 .section_nav{
     display: flex;
@@ -179,7 +183,7 @@ Footer
 footer{
     display: flex;
     justify-content: space-between;
-    
+    height: 100px;
     width: 100%;
     background-color: rgba(40, 40, 40, 1);
 }
