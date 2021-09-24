@@ -11,6 +11,12 @@
 .flex-contain{
     display: flex;
 }
+/****
+.hover:hover{
+    color: white;
+}
+*/
+
 /**************
 header
 ***************/
@@ -41,6 +47,9 @@ aside{
     color: white;
     
 }
+.cont_head_aside>a:hover{
+    color: white;
+}
 .logo{
     padding-bottom: 2rem;
 }
@@ -58,6 +67,16 @@ div>a{
     display: flex;
     align-items: center;
 }
+.logo_casa{
+    position: relative;
+}
+.barra_verticale_verde{
+    position: absolute;
+    background-color: yellowgreen;
+    width: 2px;
+    height: 26px;
+    left: -28px;
+}
 a> img{
     width: 15%;
 }
@@ -74,8 +93,11 @@ a> p{
 }
 .playlist> a{
     font-size: 13px;
+    
 }
-
+.playlist>a:hover{
+    color: white;
+}
 
 .cont_head_aside> h3{
     padding: 2rem 0 1rem 0;
@@ -130,10 +152,23 @@ section{
     justify-content: center;
 }
 .section_nav> h4{
-    
     flex-wrap: wrap;
     color:rgba(94, 94, 94, 94);
     padding-left: 1rem;
+}
+.h4_evidenza{
+    position: relative;
+}
+.h4_evidenza>h4{
+    
+    color:rgba(94, 94, 94, 94);
+}
+.h4_evidenza>span{
+    position: absolute;
+    width: 37px;
+    height: 2px;
+    background-color: yellowgreen;
+    left: 37%;
 }
 /********image
 **************/
@@ -184,26 +219,112 @@ footer{
     background-color: rgba(40, 40, 40, 1);
 }
 .sinister_contain{
-
+    align-items: center;
 }
 .img_sinister{
     padding: 1rem 0;
     width: 15%;
-    flex-wrap: wrap;
-    
 }
 .img_sinister> img{
     
     width: 100%;
 }
 .titolo_sinister{
+    padding-left: 1rem;
     color: white;
-    
+}
+.titolo_sinister> p{
+    color: rgba(94, 94, 94, 94);
+    font-size: 11px;
+    font-weight: 600;
 }
 .icone_footer{
     padding-left: 2rem;
     color:rgba(94, 94, 94, 94);
 }
-.icone_footer> i{
-    padding-left: 0.5rem;
+.sinister_contain> i{
+    color:rgba(94, 94, 94, 94);
+    padding-left: 1rem;
+}
+/*****play*******/
+.contain_play{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.play> i{
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+}
+.barra_minuti> span{
+    color: white;
+    font-size: 10px;
+    padding: 0 1rem;
+}
+
+.barra{
+    border-radius: 50px;
+    background-color: #0a0a0a;
+    width: 421px;
+    height: 3px;
+}
+.barra> div{
+    position: relative;
+    border-radius: 50px;
+    vertical-align: middle;
+    background-color: #f1eeee;
+    width: 30%;
+    height: 70%
+}
+.pallina_barra{
+    position: absolute;
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    left: 100%;
+    top: -4px; 
+}
+/******* barra piccola *******/
+.icone_destra{
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+.cont_icon{
+    float: left;
+    padding-right: 1rem;
+    color: white;
+}
+.cont_icon> i{
+    padding-left: 1rem;
+}
+.barra_mini{
+    
+    float: left;
+    border-radius: 50px;
+    background-color: #0a0a0a;
+    width: 100px;
+    height: 3px;
+}
+.barra_mini> div{
+    position: relative;
+}
+.barra_mini> div{
+    border-radius: 50px;
+    vertical-align: middle;
+    background-color: #f1eeee;
+    width: 20%;
+    height: 70%
+}
+.pallina_barra1{
+    position: absolute;
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    left: 100%;
+    bottom: -4px;
+    
 }
