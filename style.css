@@ -24,12 +24,11 @@ body{
     width: 100vw;
     height: 100%;
     font-family: sans-serif;
-    
+    overflow: ;
 }
 
 main{
    display: flex;
-    
     width: 100%;
     justify-content: flex-start; 
 }
@@ -173,8 +172,10 @@ section{
 }
 .section_nav{
     display: flex;
-    padding-top: 2%;
+    flex-wrap: wrap;
+    padding: 2rem 0 2rem;
     justify-content: center;
+    font-size: 10px;
 }
 .section_nav> h4{
     flex-wrap: wrap;
@@ -209,16 +210,22 @@ section{
 }
 
 .img_contain{
-    flex-wrap: wrap;
-    display: flex;
+    
     width: 100%;
     padding: 2rem 0;
 }
+.colonna{
+    width: calc (100% /6);
+}
 .image{
-    
+    float: left;
    width: 220px; 
    text-align: center;
 }
+.border_radius{
+    border-radius: 111px;
+}
+
 .image> img{
     width: 100%;
     padding: 0.5rem;
@@ -246,7 +253,7 @@ footer{
 .sinister_contain{
     justify-content: flex-start;
     align-items: center;
-    width: 33%;
+    width: 25%;
 
 }
 .img_sinister{
@@ -258,7 +265,8 @@ footer{
     width: 100%;
 }
 .titolo_sinister{
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 2rem;
     color: white;
 }
 .titolo_sinister>p:hover{
@@ -282,7 +290,7 @@ footer{
 }
 /*****play*******/
 .contain_play{
-    width: 33%;
+    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -296,17 +304,20 @@ footer{
 .fa-play-circle:hover{
     font-size: 2.5rem;
 }
+
+.barra_minuti{
+    width: 100%;
+}
+.barra{
+    border-radius: 50px;
+    background-color: #0a0a0a;
+    width: 100%;
+    height: 3px;
+}
 .barra_minuti> span{
     color: white;
     font-size: 10px;
     padding: 0 1rem;
-}
-
-.barra{
-    border-radius: 50px;
-    background-color: #0a0a0a;
-    width: 421px;
-    height: 3px;
 }
 .barra> div{
     position: relative;
@@ -342,7 +353,7 @@ footer{
 /******* barra piccola *******/
 .icone_destra{
 
-    width: 33%;
+    width: 25%;
     padding-right: 2rem;
     display: flex;
     align-items: center;
