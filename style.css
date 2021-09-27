@@ -110,9 +110,11 @@ a> p{
 
 .cont_head_aside> h3{
     padding: 2rem 0 1rem 0;
+    font-size: 14px;
 }
 .installa{
     margin: auto;
+    padding-top: 1rem;
     
     
 }
@@ -122,10 +124,29 @@ a> p{
 .installa>a :hover{
     color: white;
 }
-.img_profile{
-    width: 15%;
+.profilo{
+    display: flex;
+   align-items: center;
+    
+    
 }
+.icona_profilo{
+    background-color: gray;
+    height: 24px;
+    width: 24px;
+    
+    text-align: center;
+    border-radius: 50px;
+    line-height: 6px;
+}
+.img_profile{
+    
+    width: 18px;
+}
+
 .john{
+    
+    padding-top: 1rem;
     font-weight: 700;
     color: white;
 }
@@ -143,9 +164,8 @@ section{
     color: white;
     display: flex;
     justify-content: flex-end;
-    
     align-items: center;
-    height: 105px;
+    height: 85px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.561);
 }
@@ -211,6 +231,8 @@ section{
     
 }
 .gruppi_playlist> p{
+    font-size: 14px;
+    font-weight: 600;
     padding-top: 0.5rem;
     color:rgba(94, 94, 94, 94);
 }
@@ -231,19 +253,30 @@ section{
 .border_radius{
     border-radius: 111px;
 }
-
-.image> img{
+.effect_img{
+    position: relative;
+}
+.effect_img> img{
     width: 100%;
     padding: 0.5rem;
 }
-.image>i{
-    display: none;
-    position: absolute;
-    top: 36%;
-    left: 40%;
-    color: white;
+.effect_img>img:hover{
+    filter: opacity(0.5);
+
 }
-.image:hover image{
+.effect_img i {
+   display: none;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%);
+    
+    color: white;
+
+}
+.effect_img:hover i{
     display: block;
 }
 .image> p{
@@ -283,11 +316,11 @@ footer{
 }
 .img_sinister> img{
     padding-left: 1rem;
-    width: 100%;
+    width: 80px;
 }
 .titolo_sinister{
     padding-left: 0.5rem;
-    padding-right: 2rem;
+    padding-right: 0.5rem;
     color: white;
 }
 .titolo_sinister>p:hover{
@@ -298,13 +331,10 @@ footer{
     font-size: 11px;
     font-weight: 600;
 }
-.icone_footer{
-    padding-left: 2rem;
-    color:rgba(94, 94, 94, 94);
-}
+
 .sinister_contain> i{
     color:rgba(94, 94, 94, 94);
-    padding-left: 1rem;
+    padding-left: 0.5rem;
 }
 .sinister_contain> i:hover{
     color: white;
@@ -330,7 +360,7 @@ footer{
 }
 
 .barra_minuti{
-    width: 90%;
+    width: 85%;
 }
 .barra{
     border-radius: 50px;
@@ -472,9 +502,9 @@ footer{
     .img_install{
         width: 15px;
     }
-    .img_profile{
-        width: 15px;
-        padding-top: 1rem;
+   
+    .john{
+        display: none;
     }
     .head_main{
         height: 80px;
@@ -494,6 +524,7 @@ footer{
         font-size: 22px;
         text-align: center;
     }
+   
     .h4_evidenza{
         position: relative;
     }
@@ -509,6 +540,9 @@ footer{
     }
     footer{
         height: 65px;
+    }
+    .img_sinister>img{
+        display: none;
     }
     .titolo_sinister> h4{
         font-size: 10px;
