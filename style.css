@@ -47,8 +47,13 @@ aside{
     color: white;
     
 }
+.cont_head_aside{
+    height: 100%;
+    overflow: hidden;
+}
 .cont_head_aside>a:hover{
     color: white;
+    
 }
 .logo{
     padding-bottom: 2rem;
@@ -89,7 +94,7 @@ a> p{
 }
 .playlist{
     overflow: auto;
-    height: 15%;
+    height: 100%;
 }
 .playlist> a{
     font-size: 13px;
@@ -101,6 +106,10 @@ a> p{
 
 .cont_head_aside> h3{
     padding: 2rem 0 1rem 0;
+}
+.installa{
+    
+    margin: auto;
 }
 .img_install{
     width: 10%;
@@ -235,14 +244,17 @@ footer{
     background-color: rgba(40, 40, 40, 1);
 }
 .sinister_contain{
+    justify-content: flex-start;
     align-items: center;
+    width: 33%;
+
 }
 .img_sinister{
-    padding: 1rem 0;
-    width: 15%;
+    padding: 1rem 1rem 0 0;
+    width: 76px;
 }
 .img_sinister> img{
-    
+    padding-left: 1rem;
     width: 100%;
 }
 .titolo_sinister{
@@ -264,7 +276,9 @@ footer{
 }
 /*****play*******/
 .contain_play{
+    width: 33%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -293,25 +307,37 @@ footer{
     width: 30%;
     height: 70%
 }
+.barra> div:hover{
+    background-color: yellowgreen;
+}
+.barra> div:hover .pallina_barra{
+    display: block;
+    
+}
+
 .pallina_barra{
     display: none;
     position: absolute;
-    background-color: yellow;
+    background-color: yellowgreen;
     width: 10px;
     height: 10px;
     border-radius: 50px;
     left: 100%;
     top: -4px; 
 }
+
 .pallina_barra:hover{
     display: block;
 }
 
 /******* barra piccola *******/
 .icone_destra{
+
+    width: 33%;
     padding-right: 2rem;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 .cont_icon{
     float: left;
@@ -322,7 +348,6 @@ footer{
     padding-left: 1rem;
 }
 .barra_mini{
-    
     float: left;
     border-radius: 50px;
     background-color: #0a0a0a;
@@ -340,13 +365,22 @@ footer{
     height: 70%
 }
 .pallina_barra1{
-    
+    display: none;
     position: absolute;
-    background-color: yellow;
+    background-color: yellowgreen;
     width: 10px;
     height: 10px;
     border-radius: 50px;
     left: 100%;
     bottom: -4px;
+}
+.barra_mini> div:hover{
+    background-color: yellowgreen;
+}
+.barra_mini> div:hover .pallina_barra1{
     
+    display: block;
+}
+.pallina_barra1:hover{
+    display: block;
 }
