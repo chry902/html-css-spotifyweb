@@ -24,23 +24,27 @@ body{
     width: 100vw;
     height: 100%;
     font-family: sans-serif;
-    overflow: ;
+    
 }
 
 main{
-   display: flex;
+    display: flex;
     width: 100%;
-    justify-content: flex-start; 
+    justify-content: flex-start;
+    height: calc(100vh - 100px);
 }
 /**********
 aside
 ***********/
 aside{
+
+    height: calc(100vh - 100px);
+    overflow-y: auto;
     justify-content: space-between;
     flex-direction: column;
     background-color: rgb(0, 0, 0);
     width: 200px;
-    
+    height: calc(100vh - 100px);
     padding-left: 2rem;
     padding-right: 2rem;
     color: white;
@@ -48,7 +52,7 @@ aside{
 }
 .cont_head_aside{
     height: 100%;
-    overflow: hidden;
+    
 }
 .cont_head_aside>a:hover{
     color: white;
@@ -92,8 +96,9 @@ a> p{
     font-size: 13px;
 }
 .playlist{
-    overflow: auto;
-    height: 100%;
+    height: 20%;
+    overflow-y:auto;
+    
 }
 .playlist> a{
     font-size: 13px;
@@ -107,8 +112,9 @@ a> p{
     padding: 2rem 0 1rem 0;
 }
 .installa{
-    
     margin: auto;
+    
+    
 }
 .img_install{
     width: 10%;
@@ -130,7 +136,7 @@ Main
 section{
     
     width: 100%;
-    
+    height: 100%;
     background-color: rgba(20, 25, 34, 1)
 }
 .head_main{
@@ -170,6 +176,12 @@ section{
     flex-direction: column;
     overflow-y: auto;
 }
+.section_nav>h4:hover{
+    color: white;
+}
+.h4_evidenza>h4:hover{
+    color: white;
+}
 .section_nav{
     display: flex;
     flex-wrap: wrap;
@@ -194,7 +206,7 @@ section{
     width: 37px;
     height: 2px;
     background-color: yellowgreen;
-    left: 37%;
+    left: 23%;
 }
 /********image
 **************/
@@ -210,17 +222,15 @@ section{
 }
 
 .img_contain{
-    
     width: 100%;
     padding: 2rem 0;
 }
-.colonna{
-    width: calc (100% /6);
-}
+
 .image{
+    position: relative;
     float: left;
-   width: 220px; 
-   text-align: center;
+    width: 220px; 
+    text-align: center;
 }
 .border_radius{
     border-radius: 111px;
@@ -229,6 +239,16 @@ section{
 .image> img{
     width: 100%;
     padding: 0.5rem;
+}
+.image>i{
+    display: none;
+    position: absolute;
+    top: 36%;
+    left: 40%;
+    color: white;
+}
+.image:hover image{
+    display: block;
 }
 .image> p{
     color:rgba(94, 94, 94, 94);
@@ -249,16 +269,21 @@ footer{
     height: 100px;
     width: 100%;
     background-color: rgba(40, 40, 40, 1);
+    z-index: 11;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 .sinister_contain{
     justify-content: flex-start;
     align-items: center;
     width: 25%;
-
+    height: 100%;
 }
 .img_sinister{
     padding: 1rem 1rem 0 0;
-    width: 76px;
+    width: 80px;
+    
 }
 .img_sinister> img{
     padding-left: 1rem;
@@ -290,6 +315,7 @@ footer{
 }
 /*****play*******/
 .contain_play{
+    height: 100%;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -297,16 +323,18 @@ footer{
     align-items: center;
 }
 .play> i{
-    font-size: 1.5rem;
     color: white;
     padding: 1.5rem;
 }
-.fa-play-circle:hover{
+.effect_play{
+    font-size: 2rem;
+}
+.effect_play:hover{
     font-size: 2.5rem;
 }
 
 .barra_minuti{
-    width: 100%;
+    width: 90%;
 }
 .barra{
     border-radius: 50px;
@@ -352,7 +380,7 @@ footer{
 
 /******* barra piccola *******/
 .icone_destra{
-
+    height: 100%;
     width: 25%;
     padding-right: 2rem;
     display: flex;
@@ -367,11 +395,11 @@ footer{
 .cont_icon> i{
     padding-left: 1rem;
 }
-.barra_mini{
+.barra_mini {
     float: left;
     border-radius: 50px;
     background-color: #0a0a0a;
-    width: 100px;
+    width: 80px;
     height: 3px;
 }
 .barra_mini> div{
@@ -403,4 +431,155 @@ footer{
 }
 .pallina_barra1:hover{
     display: block;
+}
+
+
+/***************************
+         mediaQ
+***************************/
+
+@media screen and (max-width: 420px) {
+   main{
+    height: calc(100vh - 65px);
+   }
+    aside{
+        height: calc(100vh - 65px);
+        width: 50px;
+        padding:0 0.5rem; 
+    }
+    .logo>img{
+        display: none;
+    }
+    .logo{
+        background-image: url("./img/logo-small.svg");
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 1rem 0;
+    }
+    a>p{
+        display: none;
+    }
+    a>img{
+        width: 20px;
+        margin: auto;
+    }
+    .cont_head_aside>h3{
+        display: none;
+    }
+   .crea_playlist{
+       display: none;
+   }
+    .playlist{
+        display: none;
+    }
+    .img_install{
+        width: 15px;
+    }
+    .img_profile{
+        width: 15px;
+        padding-top: 1rem;
+    }
+    .head_main{
+        height: 80px;
+    }
+    .head_main> div{
+        text-align: center;
+        margin:auto;
+        border: 2px solid white;
+        padding: 1rem 1rem;
+        border-radius: 38px;
+    }
+    .section_nav> h4{
+        color:rgba(94, 94, 94, 94);
+        padding: 1rem 1rem;
+    }
+    .gruppi_playlist>h2{
+        font-size: 22px;
+        text-align: center;
+    }
+    .h4_evidenza{
+        position: relative;
+    }
+    .h4_evidenza>h4{
+        line-height: 44px;
+    }
+    .h4_evidenza>span{
+        top: 28px;
+    }
+    .image{
+        justify-content: center;
+        width: 186px;
+    }
+    footer{
+        height: 65px;
+    }
+    .titolo_sinister> h4{
+        font-size: 10px;
+    }
+    .titolo_sinister> p{
+        font-size: 8px;
+        
+    }
+    .titolo_sinister>i{
+        display: none;
+    }
+    .sinister_contain>i{
+        display: none;
+    }
+    .play>i{
+        font-size: 1rem;
+        float: left;
+        padding: 0.5rem;
+    }
+    .barra_minuti>span{
+        display: none;
+    }
+    .cont_icon{
+        display: none;
+    }
+    .barra_mini{
+        margin-left: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    main{
+        height: calc(100vh - 65px);
+       }
+       aside{
+        height: calc(100vh - 65px);
+        
+        
+    }
+    .playlist{
+        /*
+        height: 25%;
+        */
+        display: none;
+    }
+    footer{
+        height: 65px;
+    }
+    .titolo_sinister{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        color: white;
+    }
+    .sinister_contain> i{
+        
+        padding-left: 0.5rem;
+    }
+    .sinister_contain>i{
+        display: none;
+    }
+    .play>i{
+        font-size: 1rem;
+        float: left;
+        padding: 0.5rem;
+    }
+    .cont_icon>i{
+        font-size: 1rem;
+    }
 }
